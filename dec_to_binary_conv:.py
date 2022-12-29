@@ -4,10 +4,10 @@ class dec_to_binary_conv:
     stored = int
     check = bool
     def input_check(input_dec, check):  #Check input to be below 1024 so binary can only have 10 digits
-        if input_dec > 1024:
+        if input_dec >= 1024:
             check = False
             return check
-        elif input_dec <= 1024:
+        elif input_dec < 1024:
             check = True
             return check
     check = input_check(input_dec, check)
