@@ -11,7 +11,5 @@ class list_sorter:
         elif order == "desc":
             list2.sort(reverse=True, )
             return list2
-        #elif order ==  " ":
-            #return list2
         else: return list2
     print(sorting(list2, order))   
